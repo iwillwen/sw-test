@@ -16,6 +16,8 @@ this.addEventListener('install', function(event) {
   );
 });
 
+console.log(IDBDatabase)
+
 this.addEventListener('fetch', function(event) {
   var response;
   event.respondWith(caches.match(event.request).catch(function() {
